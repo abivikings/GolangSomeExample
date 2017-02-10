@@ -1,0 +1,103 @@
+.account-home {
+  .login-settings {
+    h2 {
+      margin-top: 1em;
+    }
+
+    button {
+      white-space: normal;
+
+      .glyphicon {
+        margin-right: .5em;
+        top: 3px;
+      }
+
+      &.delete-account {
+        margin-top: 2em;
+        margin-bottom: 3em;
+
+        transition: opacity .5s, margin-top .3s .2s, height .5s .1s;
+        opacity: 1;
+
+        &.fade-out {
+          opacity: 0;
+          height: 0;
+          margin-top: -15px;
+        }
+      }
+    }
+
+    .switch-accounts-cancel {
+      margin-left: .5em;
+    }
+
+    .switch-account-information {
+      margin-top: 2em;
+
+      transition: opacity .5s;
+      opacity: 1;
+
+      &.fade-out {
+        opacity: 0;
+      }
+
+      .switch-account-confirmation {
+        font-size: 24px;
+        margin-right: 1em;
+      }
+
+      .google-plus {
+        background-image: url("/img/google-plus.png");
+        background-repeat: no-repeat;
+
+        background-size: 18px 18px;
+
+        width: 18px;
+        height: 18px;
+        top: .2em;
+        margin-right: .5em;
+      }
+    }
+
+    .desperate-delete-message, .apologetic-delete-message, .warning-delete-message {
+      margin-bottom: 1em;
+
+      button {
+        margin-top: 1em;
+
+        &.disabled {
+          opacity: .9;
+          pointer-events: auto;
+        }
+      }
+
+      &.collapsing {
+        max-height: 230px;
+      }
+
+      .cancel-account-deletion {
+        margin-left: 1em;
+      }
+    }
+
+    .warning-delete-message {
+      form {
+        margin-bottom: 0;
+      }
+
+      .form-group {
+        margin-top: .5em;
+        margin-bottom: .5em;
+      }
+    }
+  }
+
+  .user-referral-codes {
+    border-top: .1em dotted whitesmoke;
+    padding-top: 1.5em;
+
+    > h2 {
+      margin-bottom: 1.5em;
+    }
+  }
+}

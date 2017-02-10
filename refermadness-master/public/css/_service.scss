@@ -1,0 +1,161 @@
+.search-area {
+  margin-top: 0;
+
+  .service-name {
+    font-size: 44px;
+    font-weight: bold;
+  }
+
+  .random-referral-code {
+    margin-top: 2em;
+
+    .referral-code-actions {
+      margin-top: 1.5em;
+      transition: opacity .5s;
+
+      button {
+        margin-right: 1em;
+        margin-left: 1em;
+      }
+
+      &.fade-in {
+        opacity: 1;
+      }
+
+      &.fade-out {
+        opacity: 0;
+      }
+
+      .glyphicon {
+        margin-right: .5em;
+      }
+
+      .report-bad-code {
+        display: inline;
+
+        > span.report-code-ask {
+          font-size: 15px;
+          vertical-align: middle;
+        }
+
+        .report-code-cancel {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .referral-code {
+    transition: opacity .4s;
+
+    &.fade-in {
+      opacity: 1;
+    }
+
+    &.fade-out {
+      opacity: 0;
+    }
+  }
+
+  .add-referral-code, .edit-referral-code, .referral-code-actions {
+  }
+
+  .view-result a {
+    word-wrap: break-word;
+  }
+
+  .add-referral-code {
+    .btn-default span {
+      margin-right: .5em;
+    }
+
+    .add-code-btn {
+      .glyphicon {
+        top: -3px;
+      }
+    }
+
+    .add-code-msg {
+      display: inline-block;
+      width: 14em;
+      overflow: hidden;
+      white-space: nowrap;
+      transition: width 2s;
+
+      &.hide-me {
+        width: 0;
+        overflow: hidden;
+        margin-right: -9px !important;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .edit-referral-code .referral-code-views {
+    margin-top: .5em;
+    font-size: 60%;
+  }
+
+  .add-referral-code, .edit-referral-code {
+    margin-top: 5em;
+
+    .add-code-btn {
+      margin-top: 3px;
+      height: 46px;
+
+      &.hide-me {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left-color: lightgrey;
+      }
+
+      .glyphicon {
+        transition: opacity .75s;
+
+        &.fade-in {
+          opacity: 1;
+        }
+
+        &.fade-out {
+          opacity: 0;
+        }
+      }
+    }
+
+    .add-code-entry {
+      display: inline-block;
+      width: 18em;
+      transition: width 2s, opacity 2s, padding 2s;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &.hide-me {
+        opacity: 0;
+        width: 0;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .add-code-entry:not(.hide-me) {
+        width: 12em;
+      }
+
+      .add-code-btn:not(.hide-me) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% { transform: scale(1); }
+  50% {transform: scale(0.7); }
+  100% { transform: scale(1); }
+}
+
+@-webkit-keyframes shake {
+  0% { transform: scale(1); }
+  50% {transform: scale(0.7); }
+  100% { transform: scale(1); }
+}

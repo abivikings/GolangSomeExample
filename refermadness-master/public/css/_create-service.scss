@@ -1,0 +1,62 @@
+.create-service {
+  .control-label {
+    font-size: 24px;
+  }
+
+  .has-error {
+    .control-label {
+      color: whitesmoke;
+    }
+
+    .form-control {
+      background: #F5D5DE;
+    }
+  }
+
+  .form-control-feedback {
+    color: white;
+
+    margin-right: 15px;
+    top: 6px;
+    font-size: 22px;
+  }
+
+  .has-error .form-control-feedback {
+    color: #A94442;
+  }
+
+  .create-service-subtitle {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: .25em;
+  }
+
+  .create-service-title {
+    font-size: 28px;
+  }
+
+  .create-service-information {
+    margin-bottom: .75em;
+  }
+
+  transition: opacity 2s;
+  opacity: 0;
+
+  &.fade-in {
+    opacity: 1;
+  }
+
+  button {
+    float: left;
+    margin-top: .5em;
+
+    .glyphicon {
+      margin-right: .5em;
+      top: 2px;
+    }
+  }
+}
+
+.create-service-home .search-area {
+  margin-top: 0;
+}

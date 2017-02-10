@@ -1,0 +1,474 @@
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muli"), url(fonts/Muli.woff2) format("woff2"), url(fonts/Muli.woff) format("woff"); }
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Monoton"), local("Monoton-Regular"), url(fonts/Monoton.woff2) format("woff2"), url(fonts/Monoton.woff) format("woff"); }
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  background-color: transparent;
+  color: inherit;
+  border-color: whitesmoke;
+  white-space: normal; }
+
+.btn-google,
+.btn-google:hover,
+.btn-google:focus {
+  background-color: #2196f3; }
+
+.btn-default:hover {
+  opacity: 0.85; }
+
+a, .btn-link {
+  color: lavender; }
+  a:hover, .btn-link:hover {
+    color: lavender; }
+
+input[type=text].disabled {
+  color: grey;
+  font-style: italic;
+  cursor: pointer; }
+
+@media (min-width: 768px) {
+  .col-md-3-point-5 {
+    width: 49%; } }
+@media (min-width: 992px) {
+  .col-md-3-point-5 {
+    width: 24%; } }
+.glyphicon.spin {
+  animation-name: loading-spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  -webkit-animation-name: loading-spin;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear; }
+  .glyphicon.spin.infinite {
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; }
+  .glyphicon.spin.fast {
+    animation-duration: 350ms;
+    -webkit-animation-duration: 350ms; }
+.glyphicon.shake {
+  animation-name: shake;
+  animation-duration: 200ms;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 200ms;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear; }
+
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@-webkit-keyframes loading-spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+#terms p {
+  font-size: 14px; }
+
+#content {
+  font-size: 28px;
+  font-family: 'Muli', sans-serif;
+  background-color: #00B655;
+  color: whitesmoke; }
+
+.title {
+  margin-top: 0;
+  padding-top: 0.2em;
+  font-family: 'Monoton', cursive;
+  font-size: 56px;
+  transition: font-size 2s; }
+  .title.fast {
+    transition: font-size 1s; }
+  .title a {
+    color: white;
+    text-decoration: none; }
+  .title.shrink {
+    font-size: 48px; }
+
+.login-btn, .account-btn, .logout-btn {
+  margin-top: 1em; }
+  .login-btn .glyphicon, .account-btn .glyphicon, .logout-btn .glyphicon {
+    font-size: 12px;
+    margin-right: .5em; }
+
+.account-btn {
+  margin-right: .5em; }
+
+#authenticate-panel {
+  background-color: #4EC987; }
+  #authenticate-panel .glyphicon-question-sign {
+    font-size: 14px;
+    vertical-align: top;
+    cursor: pointer; }
+  #authenticate-panel button {
+    font-size: 24px;
+    margin-top: 1.5em;
+    margin-bottom: .5em; }
+    #authenticate-panel button .google-plus {
+      background-image: url("/img/google-plus.png");
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      width: 24px;
+      height: 24px;
+      top: .2em;
+      margin-right: .5em; }
+  #authenticate-panel #login-faq .login-faq-question, #authenticate-panel #login-faq .login-faq-answer {
+    font-size: 16px;
+    text-align: left; }
+  #authenticate-panel #login-faq .login-faq-answer {
+    margin-left: 1em; }
+
+@media (min-width: 380px) {
+  .title {
+    font-size: 64px; } }
+@media (min-width: 768px) {
+  .title {
+    font-size: 108px; } }
+html, body {
+  font-family: 'Muli', sans-serif;
+  background-color: #00B655;
+  color: whitesmoke; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 50px; }
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #00B655; }
+  #footer small {
+    font-size: 14px; }
+  #footer .container {
+    border-top: .1em solid whitesmoke;
+    padding: 15px;
+    padding-bottom: 0; }
+  #footer a {
+    color: whitesmoke; }
+
+.search-panel {
+  background-color: #00B655; }
+  .search-panel p {
+    font-weight: bold; }
+  .search-panel img {
+    padding-top: .5em; }
+
+.search-home .search-area {
+  margin-top: 0; }
+
+.search-results {
+  margin-top: 1em; }
+
+.search-result {
+  border: solid 1px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  min-height: 120px;
+  transition: opacity .2s; }
+  .search-result.fade-out {
+    opacity: 0; }
+  .search-result:hover {
+    cursor: pointer; }
+
+.search-box {
+  transition: opacity 1s; }
+  .search-box.fade-out {
+    opacity: 0; }
+
+.more-results .glyphicon {
+  margin-right: .5em;
+  top: 3px; }
+
+.search-panel-message {
+  transition: all 2s; }
+  .search-panel-message.fadeout {
+    margin-top: -15px;
+    font-size: 0;
+    opacity: 0; }
+
+.create-search-result h2 {
+  font-weight: bold; }
+.create-search-result .glyphicon {
+  margin-top: 30px;
+  font-size: 60px; }
+
+.search-area {
+  margin-top: 0; }
+  .search-area .service-name {
+    font-size: 44px;
+    font-weight: bold; }
+  .search-area .random-referral-code {
+    margin-top: 2em; }
+    .search-area .random-referral-code .referral-code-actions {
+      margin-top: 1.5em;
+      transition: opacity .5s; }
+      .search-area .random-referral-code .referral-code-actions button {
+        margin-right: 1em;
+        margin-left: 1em; }
+      .search-area .random-referral-code .referral-code-actions.fade-in {
+        opacity: 1; }
+      .search-area .random-referral-code .referral-code-actions.fade-out {
+        opacity: 0; }
+      .search-area .random-referral-code .referral-code-actions .glyphicon {
+        margin-right: .5em; }
+      .search-area .random-referral-code .referral-code-actions .report-bad-code {
+        display: inline; }
+        .search-area .random-referral-code .referral-code-actions .report-bad-code > span.report-code-ask {
+          font-size: 15px;
+          vertical-align: middle; }
+        .search-area .random-referral-code .referral-code-actions .report-bad-code .report-code-cancel {
+          margin-left: 0; }
+  .search-area .referral-code {
+    transition: opacity .4s; }
+    .search-area .referral-code.fade-in {
+      opacity: 1; }
+    .search-area .referral-code.fade-out {
+      opacity: 0; }
+  .search-area .view-result a {
+    word-wrap: break-word; }
+  .search-area .add-referral-code .btn-default span {
+    margin-right: .5em; }
+  .search-area .add-referral-code .add-code-btn .glyphicon {
+    top: -3px; }
+  .search-area .add-referral-code .add-code-msg {
+    display: inline-block;
+    width: 14em;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 2s; }
+    .search-area .add-referral-code .add-code-msg.hide-me {
+      width: 0;
+      overflow: hidden;
+      margin-right: -9px !important;
+      white-space: nowrap; }
+  .search-area .edit-referral-code .referral-code-views {
+    margin-top: .5em;
+    font-size: 60%; }
+  .search-area .add-referral-code, .search-area .edit-referral-code {
+    margin-top: 5em; }
+    .search-area .add-referral-code .add-code-btn, .search-area .edit-referral-code .add-code-btn {
+      margin-top: 3px;
+      height: 46px; }
+      .search-area .add-referral-code .add-code-btn.hide-me, .search-area .edit-referral-code .add-code-btn.hide-me {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left-color: lightgrey; }
+      .search-area .add-referral-code .add-code-btn .glyphicon, .search-area .edit-referral-code .add-code-btn .glyphicon {
+        transition: opacity .75s; }
+        .search-area .add-referral-code .add-code-btn .glyphicon.fade-in, .search-area .edit-referral-code .add-code-btn .glyphicon.fade-in {
+          opacity: 1; }
+        .search-area .add-referral-code .add-code-btn .glyphicon.fade-out, .search-area .edit-referral-code .add-code-btn .glyphicon.fade-out {
+          opacity: 0; }
+    .search-area .add-referral-code .add-code-entry, .search-area .edit-referral-code .add-code-entry {
+      display: inline-block;
+      width: 18em;
+      transition: width 2s, opacity 2s, padding 2s;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+      .search-area .add-referral-code .add-code-entry.hide-me, .search-area .edit-referral-code .add-code-entry.hide-me {
+        opacity: 0;
+        width: 0;
+        padding: 0; }
+    @media (max-width: 400px) {
+      .search-area .add-referral-code .add-code-entry:not(.hide-me), .search-area .edit-referral-code .add-code-entry:not(.hide-me) {
+        width: 12em; }
+      .search-area .add-referral-code .add-code-btn:not(.hide-me), .search-area .edit-referral-code .add-code-btn:not(.hide-me) {
+        font-size: 15px; } }
+
+@keyframes shake {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+@-webkit-keyframes shake {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+#no-family, #no-friends, #no-followers {
+  width: 100%;
+  height: 150px;
+  background-size: 150px;
+  padding: 3em; }
+  #no-family:after, #no-friends:after, #no-followers:after {
+    background: linear-gradient(-135deg, transparent 0%, transparent calc(50% - 2px), whitesmoke 50%, transparent calc(50% + 2px), transparent 100%), linear-gradient(-45deg, transparent 0%, transparent calc(50% - 2px), whitesmoke 50%, transparent calc(50% + 2px), transparent 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: ''; }
+
+#no-friends {
+  background: url("/img/no-friends.png") no-repeat scroll 50% 50%; }
+
+#no-family {
+  background: url("/img/no-family.png") no-repeat scroll 50% 50%; }
+
+#no-followers {
+  background: url("/img/no-followers.png") no-repeat scroll 50% 50%; }
+
+#no-problem {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #no-problem h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 1em; }
+
+.get-started-panel .btn-default {
+  font-size: 36px;
+  background-color: transparent;
+  color: inherit;
+  border-color: whitesmoke;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  white-space: normal; }
+.get-started-panel .glyphicon-search {
+  top: 5px;
+  margin-right: .4em; }
+
+.recent-panel .container {
+  border-top: solid whitesmoke; }
+
+.lonely-panel,
+.recent-panel,
+.popular-panel {
+  background-color: #2ABB6D; }
+
+.hook-panel,
+.get-started-panel {
+  background-color: #4EC987; }
+
+.popular-panel .row, .recent-panel .row {
+  padding-top: 1em;
+  padding-bottom: .6em; }
+.popular-panel .search-result, .recent-panel .search-result {
+  margin-top: .4em; }
+
+.service-area {
+  margin-top: 1.5em; }
+
+.search-area {
+  padding: 1em;
+  margin-top: 20px; }
+
+.create-service {
+  transition: opacity 2s;
+  opacity: 0; }
+  .create-service .control-label {
+    font-size: 24px; }
+  .create-service .has-error .control-label {
+    color: whitesmoke; }
+  .create-service .has-error .form-control {
+    background: #F5D5DE; }
+  .create-service .form-control-feedback {
+    color: white;
+    margin-right: 15px;
+    top: 6px;
+    font-size: 22px; }
+  .create-service .has-error .form-control-feedback {
+    color: #A94442; }
+  .create-service .create-service-subtitle {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: .25em; }
+  .create-service .create-service-title {
+    font-size: 28px; }
+  .create-service .create-service-information {
+    margin-bottom: .75em; }
+  .create-service.fade-in {
+    opacity: 1; }
+  .create-service button {
+    float: left;
+    margin-top: .5em; }
+    .create-service button .glyphicon {
+      margin-right: .5em;
+      top: 2px; }
+
+.create-service-home .search-area {
+  margin-top: 0; }
+
+.account-home .login-settings h2 {
+  margin-top: 1em; }
+.account-home .login-settings button {
+  white-space: normal; }
+  .account-home .login-settings button .glyphicon {
+    margin-right: .5em;
+    top: 3px; }
+  .account-home .login-settings button.delete-account {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    transition: opacity .5s, margin-top .3s .2s, height .5s .1s;
+    opacity: 1; }
+    .account-home .login-settings button.delete-account.fade-out {
+      opacity: 0;
+      height: 0;
+      margin-top: -15px; }
+.account-home .login-settings .switch-accounts-cancel {
+  margin-left: .5em; }
+.account-home .login-settings .switch-account-information {
+  margin-top: 2em;
+  transition: opacity .5s;
+  opacity: 1; }
+  .account-home .login-settings .switch-account-information.fade-out {
+    opacity: 0; }
+  .account-home .login-settings .switch-account-information .switch-account-confirmation {
+    font-size: 24px;
+    margin-right: 1em; }
+  .account-home .login-settings .switch-account-information .google-plus {
+    background-image: url("/img/google-plus.png");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    top: .2em;
+    margin-right: .5em; }
+.account-home .login-settings .desperate-delete-message, .account-home .login-settings .apologetic-delete-message, .account-home .login-settings .warning-delete-message {
+  margin-bottom: 1em; }
+  .account-home .login-settings .desperate-delete-message button, .account-home .login-settings .apologetic-delete-message button, .account-home .login-settings .warning-delete-message button {
+    margin-top: 1em; }
+    .account-home .login-settings .desperate-delete-message button.disabled, .account-home .login-settings .apologetic-delete-message button.disabled, .account-home .login-settings .warning-delete-message button.disabled {
+      opacity: .9;
+      pointer-events: auto; }
+  .account-home .login-settings .desperate-delete-message.collapsing, .account-home .login-settings .apologetic-delete-message.collapsing, .account-home .login-settings .warning-delete-message.collapsing {
+    max-height: 230px; }
+  .account-home .login-settings .desperate-delete-message .cancel-account-deletion, .account-home .login-settings .apologetic-delete-message .cancel-account-deletion, .account-home .login-settings .warning-delete-message .cancel-account-deletion {
+    margin-left: 1em; }
+.account-home .login-settings .warning-delete-message form {
+  margin-bottom: 0; }
+.account-home .login-settings .warning-delete-message .form-group {
+  margin-top: .5em;
+  margin-bottom: .5em; }
+.account-home .user-referral-codes {
+  border-top: .1em dotted whitesmoke;
+  padding-top: 1.5em; }
+  .account-home .user-referral-codes > h2 {
+    margin-bottom: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */

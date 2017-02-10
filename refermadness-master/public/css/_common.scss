@@ -1,0 +1,123 @@
+$green: #00B655;
+$light-green: #2ABB6D;
+$lightest-green: #4EC987;
+$dark-green: #008D42;
+$darkest-green: #006F34;
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli'), url(fonts/Muli.woff2) format('woff2'), url(fonts/Muli.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(fonts/Monoton.woff2) format('woff2'), url(fonts/Monoton.woff) format('woff');
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  background-color: transparent;
+  color: inherit;
+  border-color: whitesmoke;
+  white-space: normal;
+}
+
+.btn-google,
+.btn-google:hover,
+.btn-google:focus {
+  background-color: #2196f3;
+}
+
+.btn-default:hover {
+  opacity: 0.85;
+}
+
+a, .btn-link {
+  color: lavender;
+
+  &:hover {
+    color: lavender;
+  }
+}
+
+input[type=text].disabled {
+  color: grey;
+  font-style: italic;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .col-md-3-point-5 {
+    width: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-3-point-5 {
+    width: 24%;
+  }
+}
+
+.glyphicon {  
+  &.spin {
+    animation-name: loading-spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    -webkit-animation-name: loading-spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+
+    &.infinite {
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+    }
+
+    &.fast {
+      animation-duration: 350ms;
+      -webkit-animation-duration: 350ms;
+    }
+  }
+
+  &.shake {
+    animation-name: shake;
+    animation-duration: 200ms;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+  }
+}
+
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes loading-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#terms {
+  p {
+    font-size: 14px;
+  }
+}
